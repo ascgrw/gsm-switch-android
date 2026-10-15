@@ -1,237 +1,38 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b1210"><title>GSM Switch</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f2f5fb"><title>GSM Switch</title>
 <style>
-:root {
-  color-scheme: dark;
-  --bg: #0b1210;
-  --card: #13211c;
-  --line: #22382f;
-  --line-light: #2e4d40;
-  --text: #f3f8f5;
-  --muted: #8e9e97;
-  --mint: #4ade80;
-  --mint-glow: rgba(74, 222, 128, 0.22);
-  --red: #ff8a80;
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
-  --font-mono: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font: 15px/1.5 var(--font-sans);
-  letter-spacing: -0.1px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: transparent;
-}
-button, input, select { font: inherit; }
-button {
-  cursor: pointer;
-  min-height: 48px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 12px 18px;
-  background: #1a2c25;
-  color: var(--text);
-  font-weight: 600;
-  letter-spacing: 0.2px;
-  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
-}
-button:active { transform: scale(0.97); }
-button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible {
-  outline: 2px solid var(--mint);
-  outline-offset: 3px;
-  box-shadow: 0 0 12px var(--mint-glow);
-}
-button:disabled { opacity: 0.45; cursor: default; transform: none; }
-svg {
-  width: 22px; height: 22px;
-  fill: none; stroke: currentColor;
-  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
-  flex-shrink: 0;
-}
-.primary {
-  background: var(--mint);
-  color: #052317;
-  border-color: var(--mint);
-  font-weight: 700;
-  box-shadow: 0 4px 16px var(--mint-glow);
-}
-.primary:active { background: #3bca71; }
-.secondary { background: #1a2a24; border-color: var(--line-light); }
-.icon-button {
-  width: 44px; height: 44px; min-height: 44px;
-  padding: 10px; display: grid; place-items: center;
-  background: transparent; border: none; color: var(--muted);
-  border-radius: 12px;
-}
-.icon-button:active { color: var(--text); background: rgba(255,255,255,0.06); }
-.muted { color: var(--muted); }
-.shell { max-width: 860px; margin: auto; padding: 24px 20px 115px; }
+:root{color-scheme:light;--bg:#f2f5fb;--card:#fff;--line:#dce3ee;--text:#243654;--muted:#5c6c86;--accent:#203a63;--blue:#4266ac;--red:#b42343}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,sans-serif;-webkit-tap-highlight-color:transparent}button,input,select{font:inherit}button{cursor:pointer;min-height:48px;border:1px solid var(--line);border-radius:15px;padding:12px 16px;background:#eaf0f8;color:var(--text);font-weight:650}button:active{transform:scale(.98)}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:3px}button:disabled{opacity:.45;cursor:default}svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.primary{background:var(--accent);color:#fff;border-color:var(--accent)}.secondary{background:#eaf0f8}.icon-button{width:48px;padding:12px;display:grid;place-items:center;background:transparent}.muted{color:var(--muted)}.shell{max-width:860px;margin:auto;padding:24px 20px 36px}.app-header{display:flex;align-items:center;gap:12px;margin:0 0 30px}.menu-toggle{background:var(--card);border-color:var(--line);border-radius:16px;flex-shrink:0;box-shadow:0 4px 16px #24365408}.brand{flex:1;min-width:0}.brand-icon{height:44px;width:44px;border-radius:15px;background:#edf2fc;color:var(--accent);display:grid;place-items:center}.brand-icon svg{height:26px;width:26px}h1{font-size:25px;letter-spacing:-.8px;line-height:1.2;margin:0;overflow-wrap:anywhere}h2{font-size:21px;line-height:1.2;letter-spacing:-.6px;margin:0}p{margin:6px 0}.ready{font-size:11px;color:var(--blue);display:flex;align-items:center;gap:6px;margin-top:4px}.ready:before{content:"";height:6px;width:6px;border-radius:50%;background:currentColor}.ready.waiting{color:#4266ac}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.count{font-size:13px;color:var(--muted);margin-top:5px}.add-button{display:flex;align-items:center;gap:6px;padding:11px 14px}.add-button svg{width:18px;height:18px}.cards{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}.switch-card{padding:18px;background:var(--card);border:1px solid var(--line);border-radius:25px;min-width:0;box-shadow:0 6px 22px #24365405}.card-top{display:flex;gap:12px;align-items:center}.switch-icon{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#edf2fc;color:var(--blue);flex-shrink:0}.switch-title{flex:1;min-width:0}.switch-title h3{margin:0;font-size:19px;letter-spacing:-.4px;overflow-wrap:anywhere}.phone{font-size:12px;color:var(--muted);margin:4px 0 0;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}.card-top .icon-button{width:44px;min-height:44px;padding:10px;border:0;color:var(--muted)}.card-meta{display:flex;align-items:center;gap:6px;margin:12px 0 14px;font-size:12px;color:var(--muted)}.card-meta svg{width:15px;height:15px}.switch-controls{display:flex;align-items:stretch;gap:12px;padding:0 0 6px}.switch-controls button{font-size:16px;min-height:80px;flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;border-radius:999px;padding:12px;letter-spacing:.3px}.control-label{max-width:100%;overflow-wrap:anywhere}.switch-controls .primary{box-shadow:0 6px 16px #203a6328}.switch-controls svg{height:28px;width:28px;stroke-width:2}.off-button{background:#edf2fc;border:2px solid #ced9ed;color:#4266ac}.last-command{display:flex;justify-content:space-between;gap:8px;align-items:center;margin:15px 0 0;color:var(--muted);font-size:12px;min-height:18px}.sent{color:var(--blue)}.failed{color:var(--red)}.bulk-bar{display:flex;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:16px;margin-top:20px}.bulk-bar button{flex:1;font-size:14px;background:#fff}.bulk-bar button:first-child{color:var(--accent)}.empty{grid-column:1/-1;text-align:center;border:1px dashed #cad4e5;border-radius:24px;padding:50px 22px;background:#fff}.empty .brand-icon{margin:0 auto 18px;width:68px;height:68px;border-radius:50%}.empty h2{font-size:22px}.empty p{font-size:14px;color:var(--muted);margin:10px 0 22px}.empty button{min-width:180px}.permission-banner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-radius:17px;background:#edf2fc;border:1px solid #c9d6ee;margin:0 0 20px}.permission-banner p{font-size:14px;margin:0}.permission-banner button{min-height:44px;padding:8px 12px;background:#dbe5f8;color:#203a63;border:0;font-size:13px}[hidden]{display:none!important}.settings-card{border:1px solid var(--line);background:var(--card);border-radius:24px;padding:6px 18px;margin:16px 0}.settings-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:17px 0;min-height:75px}.settings-row+.settings-row{border-top:1px solid var(--line)}.settings-row strong{display:block;font-size:15px}.settings-row small{font-size:12px;color:var(--muted);display:block;margin-top:4px;overflow-wrap:anywhere}.settings-row>div{min-width:0}.settings-row button{font-size:13px;min-height:44px;padding:9px 12px;flex-shrink:0}.settings-label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;margin:26px 4px 8px}.settings-actions{display:flex;gap:10px;padding:17px 0}.settings-actions>*{flex:1;min-width:0}.file-button{display:block;text-align:center;cursor:pointer;border:1px solid var(--line);border-radius:14px;padding:12px 16px;background:#eaf0f8;color:var(--text);font-weight:650;margin:0;font-size:14px}.activity{display:grid;gap:10px}.activity-item{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px}.activity-icon{height:39px;width:39px;background:#edf2fc;border-radius:50%;display:grid;place-items:center;color:#203a63;font-size:13px;font-weight:750}.activity-icon.off{background:#edf2fc;color:var(--blue)}.activity-info{flex:1;min-width:0}.activity-info b{font-size:15px;display:block;overflow-wrap:anywhere}.activity-info p{font-size:12px;color:var(--muted);margin:3px 0 0}.activity-result{text-align:right;font-size:12px;color:var(--muted);flex-shrink:0}.activity-result small{display:block;color:var(--muted);margin-top:4px}.activity-result.sent{color:var(--blue)}.activity-result.failed{color:var(--red)}.plain-empty{text-align:center;color:var(--muted);padding:50px 12px}details{padding:17px 0}details+details{border-top:1px solid var(--line)}summary{cursor:pointer;font-weight:650}details p{color:var(--muted);font-size:13px;margin-top:14px}.wiring{width:100%;background:white;border-radius:12px;margin-top:16px}dialog{position:fixed;margin:auto auto 0;background:#fff;color:var(--text);border:1px solid var(--line);border-bottom:0;border-radius:28px 28px 0 0;padding:26px 22px max(26px,env(safe-area-inset-bottom));width:100%;max-width:500px;max-height:92dvh;overflow:auto;box-shadow:0 -12px 60px #24365420}dialog::backdrop{background:#24365480;backdrop-filter:blur(3px)}.dialog-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;gap:12px}.dialog-head .icon-button{border:0;color:var(--muted);margin-right:-10px;font-size:24px;flex-shrink:0}.form-field{margin:15px 0}label{display:block;color:#51617d;font-size:13px;font-weight:550;margin-bottom:7px}input,select{width:100%;min-height:50px;border:1px solid #ccd6e5;border-radius:13px;background:#f7f9fd;color:var(--text);padding:12px 13px;font-size:16px}input::placeholder{color:#8996ad}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-actions{display:flex;gap:10px;margin-top:22px}.form-actions button{flex:1;min-height:52px}.danger{color:var(--red);background:transparent}.hint{font-size:12px;color:var(--muted);margin:6px 0 0}.toast{position:fixed;left:50%;bottom:max(24px,env(safe-area-inset-bottom));transform:translateX(-50%);border:1px solid #657590;border-radius:16px;background:#324767;color:#fff;max-width:calc(100vw - 32px);width:max-content;padding:13px 18px;font-size:14px;z-index:20;box-shadow:0 8px 30px #24365430}.inline-error{background:#fff1f5;border:1px solid #efbfcc;color:#a82449;padding:10px 13px;border-radius:12px;font-size:13px;margin-top:12px}#permissionStatus.enabled{color:var(--blue)}
+.drawer{margin:0;height:100dvh;max-height:100dvh;width:min(320px,88vw);max-width:320px;border:0;border-radius:0 28px 28px 0;padding:22px 18px;box-shadow:12px 0 50px #24365425}.drawer .dialog-head{margin-bottom:22px;align-items:flex-start}.drawer-brand{min-width:0;flex:1;display:flex;flex-direction:column;gap:14px}.drawer-brand h2{font-size:22px;overflow-wrap:anywhere}.drawer-nav{display:grid;gap:7px}.drawer-nav button{display:flex;align-items:center;gap:13px;text-align:left;border:0;background:transparent;padding:15px;min-height:56px}.drawer-nav button[aria-current=page]{background:#edf2fc;color:#203a63}.drawer-rule{height:1px;background:var(--line);margin:18px 4px}.drawer-nav .rename-button{color:var(--blue);background:#edf2fc}.drawer-caption{font-size:12px;color:var(--muted);padding:4px;margin-top:26px}
+@media(max-width:600px){.cards{grid-template-columns:1fr}.shell{padding:22px 18px 32px}.section-heading h2{font-size:21px}.switch-card{padding:18px}h1{font-size:25px}}@media(min-width:601px){dialog:not(.drawer){margin:auto;border-bottom:1px solid var(--line);border-radius:28px}}@media(prefers-reduced-motion:reduce){button:active{transform:none}}
 
-/* App Header */
-.app-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 4px 0 28px; }
-.brand { display: flex; align-items: center; gap: 14px; }
-.brand-icon {
-  height: 44px; width: 44px; border-radius: 14px;
-  background: linear-gradient(135deg, #183328 0%, #0d1e18 100%);
-  color: var(--mint); display: grid; place-items: center;
-  border: 1px solid var(--line-light);
-  box-shadow: 0 0 16px rgba(74, 222, 128, 0.15);
-}
-.brand-icon svg { height: 25px; width: 25px; }
-h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.8px; line-height: 1.1; margin: 0; }
-h2 { font-size: 21px; font-weight: 700; letter-spacing: -0.5px; line-height: 1.2; margin: 0; }
-p { margin: 6px 0; }
+button,.file-button{border-radius:999px;background:linear-gradient(180deg,#fff 0%,#e6edf8 100%);border:1px solid #cbd7e9;box-shadow:inset 0 1px 0 #fff,0 4px 0 #b7c6df,0 8px 14px #24365412;transition:transform .12s,box-shadow .12s}button.primary{background:linear-gradient(180deg,#365986 0%,#1c3459 100%);border-color:#1b3153;color:#fff;box-shadow:inset 0 1px 0 #ffffff35,0 4px 0 #122542,0 8px 14px #24365425}.switch-controls .primary{box-shadow:inset 0 1px 0 #ffffff35,0 4px 0 #122542,0 8px 14px #24365425}.off-button{background:linear-gradient(180deg,#fff,#dde7f7);border:1px solid #c2d0e5;color:#345791}.bulk-bar button{background:linear-gradient(180deg,#fff,#e6edf8)}button:active{transform:translateY(3px);box-shadow:inset 0 1px 0 #fff,0 1px 0 #b7c6df,0 3px 6px #24365415}button.primary:active{box-shadow:inset 0 1px 0 #ffffff35,0 1px 0 #122542,0 3px 6px #24365420}.icon-button{border-radius:999px;box-shadow:0 2px 0 #c8d3e5,0 5px 10px #24365408;background:linear-gradient(180deg,#fff,#edf2fa)}.menu-toggle{width:56px;min-height:46px}.card-top .icon-button{width:46px;min-height:40px;background:linear-gradient(180deg,#fff,#edf2fa);border:1px solid #d8e1ef}.dialog-head .icon-button{width:48px;min-height:42px}.drawer-nav{gap:12px}.drawer-nav button{border:1px solid #d1dced;border-radius:999px;background:linear-gradient(180deg,#fff,#e8eef8);min-height:52px;padding:12px 16px}.drawer-nav button[aria-current=page]{background:linear-gradient(180deg,#365986,#1c3459);color:#fff;box-shadow:inset 0 1px 0 #ffffff35,0 4px 0 #122542,0 8px 14px #24365420}.drawer-nav .rename-button{background:linear-gradient(180deg,#fff,#e8eef8);color:#345791}.drawer-rule{margin:7px 4px}.drawer .dialog-head{margin-bottom:18px}.drawer-brand{gap:10px}.label-group{margin:15px 0}.label-group summary{padding:4px 0}.label-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.label-fields .form-field{margin:0}.label-fields input{font-size:14px;min-height:48px;padding:10px}.label-fields label{overflow-wrap:anywhere}.label-actions{position:sticky;bottom:-26px;background:#fff;padding:12px 0;margin-top:18px}.guide-card{padding:4px 20px}.guide-card details p{line-height:1.65}.guide-card ol,.guide-card ul{padding-left:20px;font-size:14px;color:var(--muted);line-height:1.65}.guide-card li{margin:7px 0}.guide-card code{font-size:12px;background:#edf2fc;padding:2px 5px;border-radius:5px;overflow-wrap:anywhere}.guide-card summary{min-height:28px}.guide-card .wiring{border:1px solid var(--line)}@media(prefers-reduced-motion:reduce){button{transition:none}button:active{transform:none}}
+.brand-meta{display:flex;align-items:center;gap:10px;margin-top:5px}.brand-meta .ready{margin-top:0}.build-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.3px;border:1px solid #c8d5ea;background:#e5ecf8;color:#345791;border-radius:999px;padding:2px 7px;white-space:nowrap}
 
-.ready {
-  font-size: 12px; font-weight: 600; color: var(--mint);
-  display: flex; align-items: center; gap: 7px;
-  padding: 5px 12px; background: rgba(74, 222, 128, 0.08);
-  border: 1px solid rgba(74, 222, 128, 0.25); border-radius: 999px;
-  white-space: nowrap; font-family: var(--font-mono); letter-spacing: -0.2px;
-}
-.ready::before { content: ""; height: 6px; width: 6px; border-radius: 50%; background: currentColor; box-shadow: 0 0 8px currentColor; }
-.ready.waiting { color: #f59e0b; background: rgba(245, 158, 11, 0.08); border-color: rgba(245, 158, 11, 0.25); }
-
-/* Section Header */
-.section-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
-.count { font-size: 12px; color: var(--muted); margin-top: 4px; font-family: var(--font-mono); font-weight: 500; }
-.add-button { display: flex; align-items: center; gap: 7px; padding: 11px 16px; font-size: 14px; border-radius: 12px; }
-.add-button svg { width: 18px; height: 18px; }
-
-/* Switch Cards */
-.cards { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.switch-card {
-  padding: 20px;
-  background: linear-gradient(145deg, #162620 0%, #111d18 100%);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  min-width: 0;
-  transition: border-color 0.2s ease;
-}
-.switch-card:hover { border-color: var(--line-light); }
-.card-top { display: flex; gap: 12px; align-items: center; }
-.switch-icon {
-  width: 44px; height: 44px; border-radius: 13px;
-  display: grid; place-items: center;
-  background: #1f362c; color: var(--mint);
-  border: 1px solid var(--line-light);
-}
-.switch-title { flex: 1; min-width: 0; }
-.switch-title h3 { margin: 0; font-size: 18px; font-weight: 700; letter-spacing: -0.4px; overflow-wrap: anywhere; }
-.phone { font-size: 12px; color: var(--muted); margin: 3px 0 0; font-family: var(--font-mono); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
-.card-top .icon-button { width: 40px; min-height: 40px; padding: 8px; border: 0; color: var(--muted); }
-.card-meta { display: flex; align-items: center; gap: 7px; margin: 16px 0 12px; font-size: 12px; color: var(--muted); font-weight: 500; }
-.card-meta svg { width: 15px; height: 15px; color: var(--mint); }
-.switch-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.switch-controls button { font-size: 16px; font-weight: 700; min-height: 56px; display: flex; align-items: center; justify-content: center; gap: 8px; border-radius: 14px; }
-.switch-controls svg { height: 20px; width: 20px; }
-.off-button { background: #23342c; border-color: #324a3e; color: var(--text); }
-.off-button:active { background: #2d4238; }
-.last-command { display: flex; justify-content: space-between; gap: 8px; align-items: center; margin: 14px 0 0; color: var(--muted); font-size: 12px; font-weight: 500; min-height: 18px; }
-.sent { color: #a7f3d0; font-weight: 600; }
-.failed { color: var(--red); font-weight: 600; }
-
-/* Bulk Action Bar */
-.bulk-bar { display: flex; gap: 10px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 18px; margin-top: 24px; }
-.bulk-bar button { flex: 1; font-size: 14px; font-weight: 600; background: #1a2c25; border-color: var(--line-light); }
-.bulk-bar button:first-child { color: var(--mint); border-color: rgba(74, 222, 128, 0.3); }
-
-/* Empty state */
-.empty { grid-column: 1 / -1; text-align: center; border: 1px dashed var(--line-light); border-radius: 20px; padding: 50px 22px; background: rgba(17, 29, 24, 0.6); }
-.empty .brand-icon { margin: 0 auto 18px; width: 68px; height: 68px; border-radius: 20px; }
-.empty h2 { font-size: 21px; font-weight: 700; }
-.empty p { font-size: 14px; color: var(--muted); margin: 8px 0 22px; }
-.empty button { min-width: 180px; }
-
-/* Permission Banner */
-.permission-banner { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px; border-radius: 16px; background: #202e1b; border: 1px solid #3d5432; margin: 0 0 20px; }
-.permission-banner p { font-size: 14px; font-weight: 500; margin: 0; color: #d1fae5; }
-.permission-banner button { min-height: 40px; padding: 8px 14px; background: #bbf7d0; color: #14532d; border: 0; font-size: 13px; font-weight: 700; border-radius: 10px; }
-
-[hidden] { display: none !important; }
-
-/* Bottom Nav */
-.nav { position: fixed; left: 0; right: 0; bottom: 0; display: flex; justify-content: center; gap: 6px; background: rgba(11, 18, 16, 0.92); border-top: 1px solid var(--line); padding: 10px 12px max(12px, env(safe-area-inset-bottom)); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); z-index: 50; }
-.nav button { border: 0; background: transparent; color: var(--muted); border-radius: 14px; flex: 1; max-width: 220px; font-size: 12px; font-weight: 600; min-height: 62px; padding: 8px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
-.nav button[aria-selected="true"] { color: var(--mint); background: rgba(74, 222, 128, 0.1); border: 1px solid rgba(74, 222, 128, 0.2); }
-.nav svg { height: 22px; width: 22px; }
-
-/* Settings Cards & Details */
-.settings-card { border: 1px solid var(--line); background: var(--card); border-radius: 20px; padding: 6px 18px; margin: 16px 0; }
-.settings-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 17px 0; min-height: 72px; }
-.settings-row + .settings-row { border-top: 1px solid var(--line); }
-.settings-row strong { display: block; font-size: 15px; font-weight: 600; }
-.settings-row small { font-size: 12px; color: var(--muted); display: block; margin-top: 3px; font-family: var(--font-mono); }
-.settings-row button { font-size: 13px; min-height: 40px; padding: 8px 14px; flex-shrink: 0; }
-.settings-label { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1.2px; margin: 26px 4px 8px; font-family: var(--font-mono); }
-.settings-actions { display: flex; gap: 10px; padding: 16px 0; }
-.settings-actions > * { flex: 1; min-width: 0; }
-.file-button { display: block; text-align: center; cursor: pointer; border: 1px solid var(--line-light); border-radius: 12px; padding: 12px 16px; background: #1a2c25; color: var(--text); font-weight: 600; margin: 0; font-size: 14px; }
-
-/* Activity Feed */
-.activity { display: grid; gap: 10px; }
-.activity-item { display: flex; align-items: center; gap: 12px; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
-.activity-icon { height: 38px; width: 38px; background: #1c352a; border-radius: 11px; display: grid; place-items: center; color: var(--mint); font-size: 12px; font-weight: 800; border: 1px solid var(--line-light); font-family: var(--font-mono); }
-.activity-icon.off { background: #25332c; color: #a3b3ac; border-color: #36483f; }
-.activity-info { flex: 1; min-width: 0; }
-.activity-info b { font-size: 15px; font-weight: 600; display: block; overflow-wrap: anywhere; }
-.activity-info p { font-size: 12px; color: var(--muted); margin: 3px 0 0; font-family: var(--font-mono); }
-.activity-result { text-align: right; font-size: 12px; font-weight: 600; color: var(--muted); flex-shrink: 0; }
-.activity-result small { display: block; font-size: 11px; font-weight: 400; color: var(--muted); margin-top: 3px; font-family: var(--font-mono); }
-.activity-result.sent { color: var(--mint); }
-.activity-result.failed { color: var(--red); }
-.plain-empty { text-align: center; color: var(--muted); padding: 50px 12px; font-size: 14px; }
-
-details { padding: 17px 0; }
-details + details { border-top: 1px solid var(--line); }
-summary { cursor: pointer; font-weight: 600; }
-details p { color: var(--muted); font-size: 13px; margin-top: 12px; line-height: 1.6; }
-.wiring { width: 100%; background: white; border-radius: 12px; margin-top: 16px; padding: 8px; }
-
-/* Modals */
-dialog { position: fixed; margin: auto auto 0; background: #13211b; color: var(--text); border: 1px solid var(--line-light); border-bottom: 0; border-radius: 24px 24px 0 0; padding: 26px 22px max(26px, env(safe-area-inset-bottom)); width: 100%; max-width: 500px; max-height: 92dvh; overflow: auto; box-shadow: 0 -12px 48px rgba(0,0,0,0.6); }
-dialog::backdrop { background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); }
-.dialog-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; gap: 12px; }
-.dialog-head .icon-button { border: 0; color: var(--muted); margin-right: -10px; font-size: 24px; }
-.form-field { margin: 16px 0; }
-label { display: block; color: #a9bbb1; font-size: 13px; font-weight: 600; margin-bottom: 7px; }
-input, select { width: 100%; min-height: 50px; border: 1px solid var(--line-light); border-radius: 12px; background: #0c1613; color: var(--text); padding: 12px 14px; font-size: 16px; }
-input:focus, select:focus { border-color: var(--mint); }
-input::placeholder { color: #5f7268; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.form-actions { display: flex; gap: 10px; margin-top: 24px; }
-.form-actions button { flex: 1; min-height: 52px; font-size: 15px; }
-.danger { color: var(--red); background: rgba(255,138,128,0.08); border-color: rgba(255,138,128,0.25); font-weight: 600; }
-.hint { font-size: 12px; color: var(--muted); margin: 6px 0 0; }
-.toast { position: fixed; left: 50%; bottom: 98px; transform: translateX(-50%); border: 1px solid #375344; border-radius: 14px; background: #1b2d24; color: white; max-width: calc(100vw - 32px); width: max-content; padding: 13px 18px; font-size: 14px; font-weight: 500; z-index: 100; box-shadow: 0 8px 30px rgba(0,0,0,0.5); }
-.inline-error { background: #3c1e1a; border: 1px solid #6b2f29; color: #ffcdd2; padding: 11px 14px; border-radius: 12px; font-size: 13px; margin-top: 12px; }
-
-@media(max-width: 600px) {
-  .cards { grid-template-columns: 1fr; }
-  .shell { padding: 22px 18px 115px; }
-  h1 { font-size: 25px; }
-  .switch-card { padding: 18px; }
-}
-@media(min-width: 601px) {
-  dialog { margin: auto; border-bottom: 1px solid var(--line-light); border-radius: 24px; }
-}
-@media(prefers-reduced-motion: reduce) {
-  button:active { transform: none; }
-}
-#permissionStatus.enabled { color: var(--mint); font-weight: 600; }
+/* Compact two-column controls: one power action and one honest sent-state indicator. */
+.shell{max-width:720px;padding:20px 14px 30px}.app-header{margin-bottom:24px}h1{font-size:24px}.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.switch-card{padding:14px 11px;border-radius:22px}.card-top{gap:4px;align-items:flex-start;min-height:48px}.switch-title h3{font-size:16px;line-height:1.25;font-weight:650;letter-spacing:-.25px}.phone{font-size:11px}.card-top .icon-button{width:44px;min-height:44px;padding:11px;flex-shrink:0}.card-top .icon-button svg{width:18px;height:18px}.switch-controls{padding:7px 0 4px}.switch-controls .state-toggle{flex-direction:row;gap:8px;min-height:54px;width:100%;font-size:13px;padding:9px 10px;letter-spacing:0;border:1px solid #c5cfde;color:#69798e;background:linear-gradient(180deg,#f5f7fb,#dce3ee);box-shadow:inset 0 1px 0 #fff,0 4px 0 #bdc9db,0 6px 12px #24365412}.switch-controls .state-toggle svg{width:22px;height:22px}.switch-controls .state-toggle.on{color:#fff;border-color:#447ed0;background:linear-gradient(180deg,#4385d7,#254b86);box-shadow:inset 0 1px 0 #ffffff60,0 4px 0 #18386b,0 0 18px #4b8ce075,0 7px 14px #254b8630}.state-toggle.unknown{border-style:dashed;color:#536a8b}.state-caption{display:flex;justify-content:center;align-items:center;gap:5px;margin-top:9px;font-size:11px;color:var(--muted);min-height:17px}.state-dot{width:6px;height:6px;border-radius:50%;background:#9aa7b9;flex-shrink:0}.state-dot.on{background:#4084dc;box-shadow:0 0 6px #4287e3}.state-dot.unknown{background:transparent;border:1px solid #8a9bb3}.card-meta{justify-content:center;margin:5px 0 0;font-size:11px}.empty-slot{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:9px;min-height:184px;border:1px dashed #bdcce2;border-radius:22px;box-shadow:none;background:#edf2f9;padding:14px 8px;color:#647895}.empty-slot b{font-size:13px;font-weight:600}.empty-slot small{font-size:10px;overflow-wrap:anywhere}.heading-actions{display:flex;gap:10px}.section-heading h2{font-size:20px}.add-button{font-size:13px;padding:10px 12px;min-height:44px}.control-label{line-height:1.15}.drawer{animation:drawer-in .18s ease-out}@keyframes drawer-in{from{transform:translateX(-100%)}to{transform:translateX(0)}}@media(prefers-reduced-motion:reduce){.drawer{animation:none}}@media(max-width:340px){.shell{padding-left:10px;padding-right:10px}.cards{gap:10px}.switch-card{padding:12px 9px}.switch-title h3{font-size:15px}.switch-controls .state-toggle{gap:5px;font-size:12px}.section-heading{gap:6px}.section-heading h2{font-size:18px}}
 </style></head><body>
 <main class="shell">
-<header class="app-header"><div class="brand"><span class="brand-icon" id="brandIcon" aria-hidden="true"></span><h1>GSM Switch</h1></div><span class="ready waiting" id="readyBadge">Set up SMS</span></header>
-<section id="switches" class="page" aria-label="Switches"><div class="permission-banner" id="permissionBanner" hidden><p>Enable SMS to use your switches.</p><button id="enableSms">Enable SMS</button></div><div class="section-heading"><div><h2>My switches</h2><div class="count" id="switchCount"></div></div><button class="primary add-button" id="addSwitch"><span id="addIcon" aria-hidden="true"></span>Add switch</button></div><div class="cards" id="switchCards"></div><div class="bulk-bar" id="bulkBar" hidden><button id="allOn">All ON</button><button id="allOff">All OFF</button><button id="requestStatus" aria-label="Request status SMS">Status</button></div></section>
-<section id="history" class="page" aria-label="Activity" hidden><div class="section-heading"><h2>Activity</h2><button class="secondary" id="exportHistory">Export</button></div><div class="activity" id="activityList"></div></section>
-<section id="settings" class="page" aria-label="Settings" hidden><div class="section-heading"><h2>Settings</h2></div><div class="settings-card"><div class="settings-row"><div><strong>SMS permission</strong><small id="permissionStatus">Not enabled</small></div><button id="allowSms">Enable</button></div><div class="settings-row"><div><strong>Sending SIM</strong><small id="simStatus">Default SIM</small></div><button id="chooseSim">Change</button></div></div><p class="settings-label">Your data</p><div class="settings-card"><div class="settings-actions"><button id="exportBackup">Backup</button><label class="file-button">Restore<input id="importBackup" type="file" accept="application/json" hidden></label></div></div><p class="settings-label">Help</p><div class="settings-card"><details><summary>SMS &amp; replies</summary><p>Commands send when you tap ON or OFF. Your mobile plan’s SMS charges apply.</p><p>Read controller replies in Messages. A sent SMS does not confirm the switch’s actual state.</p></details><details><summary>Adding switches</summary><p>Enter a switch name, controller number and device PIN. Choose an unused output.</p><p>Each controller has two outputs. Use another controller number to add more.</p></details><details><summary>Wiring</summary><p>Output 1: D1 / GPIO5. Output 2: D2 / GPIO4. Output 1 uses the auto-off timer.</p><img class="wiring" src="downloads/Circuit.svg" alt="Controller wiring diagram"></details></div></section>
+<header class="app-header"><button class="icon-button menu-toggle" id="openMenu" aria-label="Open menu" aria-haspopup="dialog" aria-controls="sideMenu" aria-expanded="false"><span id="menuIcon" aria-hidden="true"></span></button><div class="brand"><h1 id="appTitle">GSM Switch</h1><div class="brand-meta"><span class="ready waiting" id="readyBadge">Set up SMS</span><span class="build-tag" id="buildTag">v1.7</span></div></div></header>
+<section id="switches" class="page" aria-label="Switches"><div class="permission-banner" id="permissionBanner" hidden><p>Enable SMS to use your switches.</p><button id="enableSms" data-label="enableSms">Enable SMS</button></div><div class="section-heading"><div><h2 data-label="switches">My switches</h2><div class="count" id="switchCount"></div></div><button class="primary add-button" id="addSwitch"><span id="addIcon" aria-hidden="true"></span><span data-label="addSwitch">Add switch</span></button></div><div class="cards" id="switchCards"></div><div class="bulk-bar" id="bulkBar" hidden><button id="allOn" data-label="allOn">All ON</button><button id="allOff" data-label="allOff">All OFF</button><button id="requestStatus" data-label="status">Status</button></div></section>
+<section id="history" class="page" aria-label="Activity" hidden><div class="section-heading"><h2 data-label="activity">Activity</h2><div class="heading-actions"><button class="secondary" id="exportHistory" data-label="export">Export</button><button class="icon-button" data-page="switches" aria-label="Close Activity">×</button></div></div><div class="activity" id="activityList"></div></section>
+<section id="settings" class="page" aria-label="Settings" hidden><div class="section-heading"><h2 data-label="settings">Settings</h2><button class="icon-button" data-page="switches" aria-label="Close Settings">×</button></div><div class="settings-card"><div class="settings-row"><div><strong data-label="appName">App name</strong><small id="appNameStatus">GSM Switch</small></div><button id="changeAppName" data-label="change">Change</button></div><div class="settings-row"><div><strong data-label="smsPermission">SMS permission</strong><small id="permissionStatus">Not enabled</small></div><button id="allowSms" data-label="enableSms">Enable SMS</button></div><div class="settings-row"><div><strong data-label="sendingSim">Sending SIM</strong><small id="simStatus">Default SIM</small></div><button id="chooseSim" data-label="change">Change</button></div></div><p class="settings-label">Your data</p><div class="settings-card"><div class="settings-actions"><button id="exportBackup" data-label="backup">Backup</button><label class="file-button"><span data-label="restore">Restore</span><input id="importBackup" type="file" accept="application/json" hidden></label></div></div></section>
+
+<section id="guide" class="page" aria-label="User guide" hidden><div class="section-heading"><h2 data-label="userGuide">User guide</h2><button class="icon-button" data-page="switches" aria-label="Close User guide">×</button></div><div class="settings-card guide-card">
+<details open><summary>Quick start</summary><ol><li>Open the side menu, then <span data-label="settings">Settings</span>. Enable SMS and choose the SIM you want to send from.</li><li>Tap <span data-label="addSwitch">Add switch</span>. Enter a name, controller number with country code, output and the device’s 6–12 digit PIN.</li><li>Choose the auto-off time for output 1, then save.</li><li>Tap the single power button to alternate ON and OFF. It shows ON with a blue glow after an ON SMS is sent and shows OFF dimmed after an OFF SMS is sent. Tap a glowing ON button to send OFF; tap a dimmed OFF button to send ON. A button with no known state says Power. The app sends the SMS automatically. Read controller replies in your phone’s Messages app.</li></ol></details>
+<details><summary>Add, edit and remove switches</summary><p>Use the edit icon on a card to rename a switch, change its controller number, output or timer, or remove it. Removing a card does not send an OFF command.</p><p>Choose Original for existing two-output firmware. Choose Updated only after flashing the included four-output firmware. Empty tiles add the remaining outputs for that controller. Up to 30 controllers and 120 switches are supported; each number/output pair can be added only once.</p><p>Outputs on one controller share its PIN. Leave the PIN blank when editing to keep a saved PIN.</p></details>
+<details><summary>Timers and outputs</summary><p>Output 1 turns off automatically after its selected timer. The app offers 30 seconds to 15 minutes; existing backups can retain a timer from 1–900 seconds.</p><p>Outputs 2, 3 and 4 stay on until you send OFF. A timer that has elapsed makes the app’s state unknown; it cannot check whether the controller received the command. Renaming a button does not change what it does.</p></details>
+<details><summary>All controls and status</summary><p><span data-label="allOn">All ON</span> and <span data-label="allOff">All OFF</span> send commands to the outputs you added. Individual commands are used when any output is unassigned, so empty slots are not switched. ALL is used only when every output of the chosen firmware is assigned.</p><p><span data-label="status">Status</span> asks each saved controller to reply by SMS. Read the reply in Messages. The glow shows the last successfully sent command, not a confirmed physical state. “Sending” does not change the state; failed SMS keeps the previous sent state. If Android gives no sending result for two minutes, state becomes unknown and the button is available again. Read actual relay reports in Messages. After a controller restart or an outside command, the app’s last sent state can be outdated.</p></details>
+<details><summary>SMS permission and SIM</summary><p>Allow Send SMS in Settings. Commands are sent only when you tap a control. Your mobile plan’s SMS charges apply.</p><p>For dual-SIM phones, change the sending SIM in Settings. SIM selection can request Phone permission. If you decline, choose a default SMS SIM in your phone’s settings.</p><p>This sender app does not read incoming SMS. Controller replies stay in Messages. The device PIN is included in each outgoing command and may remain in the phone’s message history.</p></details>
+<details><summary>Test with another mobile phone</summary><p>Add the other phone’s number as a test controller and use a test PIN. Tap a control and check the received SMS on that phone. This checks sending and command format; it does not test relay operation.</p><p>Commands have the format <code>PIN REQUEST_ID COMMAND</code>, for example <code>654321 A1B2C3D4 R1 ON 300</code>. Actual controllers must use matching firmware and PINs.</p></details>
+<details><summary>Backup and restore</summary><p>In Settings, <span data-label="backup">Backup</span> saves your switches, activity, app name and custom labels. <span data-label="restore">Restore</span> replaces switches and activity with the selected backup after confirmation. Older backups are supported.</p><p>PINs are encrypted on the phone and excluded from backups. Re-enter them after reinstalling or moving to a new phone. Activity can also be exported separately.</p></details>
+<details><summary>Personalize names and labels</summary><p>Use the card’s edit icon to rename a switch. In the side menu, <span data-label="appName">App name</span> changes the name inside the app and Recent apps. The phone’s launcher label is GSM Switch Navy.</p><p><span data-label="editLabels">Edit labels</span> changes button, menu and form wording. ON and OFF labels must differ. Display labels never change the actual SMS commands. Restore defaults resets the wording when you save.</p></details>
+<details><summary>Troubleshooting and updates</summary><p>If SMS fails, check permission, the selected SIM, phone number, signal and available SMS credit. The app does not retry automatically.</p><p>If a message sends but the controller does not respond, check its power, SIM signal, firmware and PIN. Read replies in Messages.</p><p>Version 1.7 uses the same signing key as 1.4–1.6 and can update them. After installation, open GSM Switch Navy and check the v1.7 badge. Versions 1.3 and earlier used another key: back up first, uninstall the earlier sender, install this app, then restore and re-enter your PINs.</p></details>
+<details><summary>Wiring</summary><p>R1: D1 / GPIO5 (timed). R2: D2 / GPIO4. R3: D0 / GPIO16. R4: D7 / GPIO13. R3 and R4 require the included four-output firmware and two additional active-HIGH relay drivers. All outputs start OFF after reset. Use a transistor/MOSFET driver with flyback protection and a gate pulldown for each relay, never a bare relay coil on a GPIO. The existing diagram shows the original two drivers; repeat that driver circuit for R3 and R4. D5/D6 are reserved for the GSM serial connection; boot and flash pins are not available as extra relay outputs.</p><img class="wiring" src="downloads/Circuit.svg" alt="Controller wiring diagram"></details>
+</div></section>
 </main>
-<nav class="nav" aria-label="Main navigation"><button data-page="switches" aria-selected="true"><span id="controlsIcon" aria-hidden="true"></span>Switches</button><button data-page="history" aria-selected="false"><span id="activityIcon" aria-hidden="true"></span>Activity</button><button data-page="settings" aria-selected="false"><span id="settingsIcon" aria-hidden="true"></span>Settings</button></nav>
-<dialog id="switchDialog"><div class="dialog-head"><h2 id="switchDialogTitle">Add switch</h2><button class="icon-button" data-close="switchDialog" aria-label="Close">×</button></div><form id="switchForm"><input id="editSwitch" type="hidden"><div class="form-field"><label for="switchName">Switch name</label><input id="switchName" required maxlength="35" placeholder="Water pump" autocomplete="off"></div><div class="form-field"><label for="switchPhone">Controller number</label><input id="switchPhone" required type="tel" maxlength="25" placeholder="+923001234567" autocomplete="tel"></div><div class="form-row"><div class="form-field"><label for="switchOutput">Output</label><select id="switchOutput"><option value="1">Output 1</option><option value="2">Output 2</option></select></div><div class="form-field" id="timerField"><label for="switchTimer">Auto off</label><select id="switchTimer"><option value="30">30 seconds</option><option value="60">1 minute</option><option value="120">2 minutes</option><option value="300" selected>5 minutes</option><option value="600">10 minutes</option><option value="900">15 minutes</option></select></div></div><div class="form-field"><label for="devicePin">Device PIN</label><input id="devicePin" type="password" inputmode="numeric" minlength="6" maxlength="12" pattern="[0-9]{6,12}" placeholder="6–12 digits" autocomplete="off"><p class="hint" id="pinHint" hidden>Leave blank to keep your saved PIN.</p></div><div class="inline-error" id="formError" role="alert" hidden></div><div class="form-actions"><button type="button" class="danger" id="removeSwitch" hidden>Remove</button><button type="submit" class="primary">Save switch</button></div></form></dialog>
-<dialog id="pinDialog"><div class="dialog-head"><h2>Device PIN</h2><button class="icon-button" data-close="pinDialog" aria-label="Close">×</button></div><p class="muted" id="pinTarget"></p><form id="pinForm"><div class="form-field"><label for="commandPin">PIN</label><input id="commandPin" type="password" inputmode="numeric" required minlength="6" maxlength="12" pattern="[0-9]{6,12}" placeholder="6–12 digits" autocomplete="off"></div><div class="form-actions"><button class="primary" type="submit">Save &amp; send</button></div></form></dialog>
-<div id="toast" class="toast" role="status" hidden></div><script src="app.js"></script></body></html>
+<dialog id="sideMenu" class="drawer" aria-labelledby="menuTitle"><div class="dialog-head"><div class="drawer-brand"><span class="brand-icon" id="brandIcon" aria-hidden="true"></span><h2 id="menuTitle">GSM Switch</h2></div><button class="icon-button" data-close="sideMenu" aria-label="Close menu">×</button></div><nav class="drawer-nav" aria-label="Main navigation"><button data-page="switches" aria-current="page"><span id="controlsIcon" aria-hidden="true"></span><span data-label="switches">My switches</span></button><button id="menuAddSwitch"><span id="menuAddIcon" aria-hidden="true"></span><span data-label="addSwitch">Add switch</span></button><button data-page="history"><span id="activityIcon" aria-hidden="true"></span><span data-label="activity">Activity</span></button><button data-page="settings"><span id="settingsIcon" aria-hidden="true"></span><span data-label="settings">Settings</span></button><button data-page="guide"><span id="guideIcon" aria-hidden="true"></span><span data-label="userGuide">User guide</span></button><div class="drawer-rule"></div><button class="rename-button" id="renameApp"><span id="renameIcon" aria-hidden="true"></span><span data-label="appName">App name</span></button><button class="rename-button" id="editLabels"><span id="labelsIcon" aria-hidden="true"></span><span data-label="editLabels">Edit labels</span></button></nav></dialog>
+<dialog id="switchDialog"><div class="dialog-head"><h2 id="switchDialogTitle">Add switch</h2><button class="icon-button" data-close="switchDialog" aria-label="Close">×</button></div><form id="switchForm"><input id="editSwitch" type="hidden"><div class="form-field"><label for="switchName" data-label="switchName">Switch name</label><input id="switchName" required maxlength="35" placeholder="Water pump" autocomplete="off"></div><div class="form-field"><label for="switchPhone" data-label="controllerNumber">Controller number</label><input id="switchPhone" required type="tel" maxlength="25" placeholder="+923001234567" autocomplete="tel"></div><div class="form-field"><label for="controllerProfile">Controller firmware</label><select id="controllerProfile"><option value="2">Original · 2 outputs</option><option value="4">Updated · 4 outputs</option></select><p class="hint" id="firmwareHint" hidden>Flash the included four-output firmware before sending commands to this controller.</p></div><div class="form-row"><div class="form-field"><label for="switchOutput" data-label="output">Output</label><select id="switchOutput"><option value="1">Output 1</option><option value="2">Output 2</option><option value="3">Output 3</option><option value="4">Output 4</option></select></div><div class="form-field" id="timerField"><label for="switchTimer" data-label="autoOff">Auto off</label><select id="switchTimer"><option value="30">30 seconds</option><option value="60">1 minute</option><option value="120">2 minutes</option><option value="300" selected>5 minutes</option><option value="600">10 minutes</option><option value="900">15 minutes</option></select></div></div><div class="form-field"><label for="devicePin" data-label="devicePin">Device PIN</label><input id="devicePin" type="password" inputmode="numeric" minlength="6" maxlength="12" pattern="[0-9]{6,12}" placeholder="6–12 digits" autocomplete="off"><p class="hint" id="pinHint" hidden>Leave blank to keep your saved PIN.</p></div><div class="inline-error" id="formError" role="alert" hidden></div><div class="form-actions"><button type="button" class="danger" id="removeSwitch" data-label="remove" hidden>Remove</button><button type="submit" class="primary" data-label="saveSwitch">Save switch</button></div></form></dialog>
+<dialog id="pinDialog"><div class="dialog-head"><h2>Device PIN</h2><button class="icon-button" data-close="pinDialog" aria-label="Close">×</button></div><p class="muted" id="pinTarget"></p><form id="pinForm"><div class="form-field"><label for="commandPin">PIN</label><input id="commandPin" type="password" inputmode="numeric" required minlength="6" maxlength="12" pattern="[0-9]{6,12}" placeholder="6–12 digits" autocomplete="off"></div><div class="form-actions"><button class="primary" type="submit" data-label="saveSend">Save &amp; send</button></div></form></dialog>
+<dialog id="nameDialog" aria-labelledby="nameDialogTitle"><div class="dialog-head"><h2 id="nameDialogTitle" data-label="appName">App name</h2><button class="icon-button" data-close="nameDialog" aria-label="Close">×</button></div><form id="nameForm"><div class="form-field"><label for="customAppName">Your app name</label><input id="customAppName" required maxlength="32" placeholder="Farm Switches" autocomplete="off"><p class="hint">Shown in this app and Recent apps.</p></div><div class="inline-error" id="nameError" role="alert" hidden></div><div class="form-actions"><button type="submit" class="primary" data-label="saveName">Save name</button></div></form></dialog>
+<dialog id="labelsDialog" aria-labelledby="labelsDialogTitle"><div class="dialog-head"><h2 id="labelsDialogTitle">Edit labels</h2><button class="icon-button" data-close="labelsDialog" aria-label="Close">×</button></div><form id="labelsForm"><div id="labelFields"></div><div class="inline-error" id="labelsError" role="alert" hidden></div><div class="form-actions label-actions"><button type="button" id="resetLabels">Restore defaults</button><button type="submit" class="primary">Save labels</button></div></form></dialog>
+<div id="toast" class="toast" role="status" hidden></div><script src="app.js?v=1.6"></script></body></html>
