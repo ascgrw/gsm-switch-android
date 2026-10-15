@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="740" height="890" preserveAspectRatio="xMinYMin meet" viewBox="0 0 740 890" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="740" height="890"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-890)" style="clip-path: url(#clip)">
+		<g transform="">
+			<g transform=" matrix(1,0,0,1,0,460)">
+				<g transform="">
+					<text x="0" y="408" style="font-family: Arial; font-size: 19px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,816) scale(1,-1)">01  Power supply and serial interface</text>
+					<text x="0" y="385" style="font-family: Arial; font-size: 10px;fill: rgb(32%,40%,36%); stroke:none;" transform="translate(0,770) scale(1,-1)">Raw SIM800L breakout with 4 V input; do not use this voltage on a different module variant.</text>
+					<rect x="10" y="290" width="130" height="65" rx="6" ry="6" style="stroke: rgb(3%,46%,32%); stroke-linecap: butt; stroke-width: 1.3; fill: rgb(93%,96%,94%); fill-rule: evenodd;"/>
+					<text x="20" y="334" style="font-family: Arial; font-size: 12px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,668) scale(1,-1)">12 V DC supply</text>
+					<text x="20" y="303" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,606) scale(1,-1)">Regulated, 2 A or more</text>
+					<path d="M 140,328 L 178,328 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<circle cx="178" cy="328" r="2.5" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,20%,16%); fill-rule: evenodd;"/>
+					<path d="M 178,328 L 178,350 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 178,350 L 215,350 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 178,328 L 178,275 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 178,275 L 215,275 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<rect x="215" y="327" width="143" height="55" rx="6" ry="6" style="stroke: rgb(3%,46%,32%); stroke-linecap: butt; stroke-width: 1.3; fill: rgb(93%,96%,94%); fill-rule: evenodd;"/>
+					<text x="225" y="361" style="font-family: Arial; font-size: 12px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,722) scale(1,-1)">Buck A: 5.0 V</text>
+					<text x="225" y="340" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,680) scale(1,-1)">1 A continuous minimum</text>
+					<rect x="215" y="248" width="143" height="55" rx="6" ry="6" style="stroke: rgb(3%,46%,32%); stroke-linecap: butt; stroke-width: 1.3; fill: rgb(93%,96%,94%); fill-rule: evenodd;"/>
+					<text x="225" y="282" style="font-family: Arial; font-size: 12px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,564) scale(1,-1)">Buck B: 4.0 V</text>
+					<text x="225" y="261" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,522) scale(1,-1)">3 A-rated, verify 2 A bursts</text>
+					<path d="M 358,350 L 515,350 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<rect x="515" y="323" width="205" height="57" rx="6" ry="6" style="stroke: rgb(3%,46%,32%); stroke-linecap: butt; stroke-width: 1.3; fill: rgb(93%,96%,94%); fill-rule: evenodd;"/>
+					<text x="525" y="359" style="font-family: Arial; font-size: 12px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,718) scale(1,-1)">NodeMCU 1.0</text>
+					<text x="525" y="336" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,672) scale(1,-1)">VIN = 5 V; GND common</text>
+					<text x="376" y="363" style="font-family: Arial; font-size: 9px;fill: rgb(3%,46%,32%); stroke:none;" transform="translate(0,726) scale(1,-1)">+5 V also to K1 / K2 coils</text>
+					<path d="M 358,275 L 515,275 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<rect x="515" y="247" width="205" height="57" rx="6" ry="6" style="stroke: rgb(3%,46%,32%); stroke-linecap: butt; stroke-width: 1.3; fill: rgb(93%,96%,94%); fill-rule: evenodd;"/>
+					<text x="525" y="283" style="font-family: Arial; font-size: 12px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,566) scale(1,-1)">SIM800L breakout</text>
+					<text x="525" y="260" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,520) scale(1,-1)">VCC / VBAT = 4.0 V only</text>
+					<circle cx="436" cy="275" r="2.5" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,20%,16%); fill-rule: evenodd;"/>
+					<path d="M 436,275 L 436,251 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 425,251 L 447,251 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 425,245 L 447,245 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 436,245 L 436,228 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 436,228 L 436,220 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 429,220 L 443,220 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 431.5,216 L 440.5,216 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 434,212 L 438,212 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<text x="366" y="238" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,476) scale(1,-1)">1000 uF / 10 V</text>
+					<text x="366" y="221" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,442) scale(1,-1)">+ 100 nF ceramic</text>
+					<text x="10" y="254" style="font-family: Arial; font-size: 9px;fill: rgb(32%,40%,36%); stroke:none;" transform="translate(0,508) scale(1,-1)">Fit input fuse and enclosure.</text>
+					<text x="10" y="237" style="font-family: Arial; font-size: 9px;fill: rgb(32%,40%,36%); stroke:none;" transform="translate(0,474) scale(1,-1)">All supply negative terminals,</text>
+					<text x="10" y="223" style="font-family: Arial; font-size: 9px;fill: rgb(32%,40%,36%); stroke:none;" transform="translate(0,446) scale(1,-1)">NodeMCU GND, modem GND,</text>
+					<text x="10" y="209" style="font-family: Arial; font-size: 9px;fill: rgb(32%,40%,36%); stroke:none;" transform="translate(0,418) scale(1,-1)">and driver GND share one net.</text>
+					<path d="M 0,194 L 740,194 Z" style="stroke: rgb(73%,81%,76%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<rect x="10" y="46" width="170" height="127" rx="6" ry="6" style="stroke: rgb(3%,46%,32%); stroke-linecap: butt; stroke-width: 1.3; fill: rgb(93%,96%,94%); fill-rule: evenodd;"/>
+					<text x="20" y="152" style="font-family: Arial; font-size: 12px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,304) scale(1,-1)">NodeMCU ESP8266</text>
+					<text x="20" y="59" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,118) scale(1,-1)">3V3 supplies U1 only</text>
+					<text x="22" y="135" style="font-family: Arial; font-size: 10px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,270) scale(1,-1)">D6 / GPIO12: TX</text>
+					<text x="22" y="90" style="font-family: Arial; font-size: 10px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,180) scale(1,-1)">D5 / GPIO14: RX</text>
+					<rect x="568" y="46" width="160" height="127" rx="6" ry="6" style="stroke: rgb(3%,46%,32%); stroke-linecap: butt; stroke-width: 1.3; fill: rgb(93%,96%,94%); fill-rule: evenodd;"/>
+					<text x="578" y="152" style="font-family: Arial; font-size: 12px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,304) scale(1,-1)">SIM800L</text>
+					<text x="578" y="59" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,118) scale(1,-1)">UART fixed at 9600 baud</text>
+					<text x="580" y="135" style="font-family: Arial; font-size: 10px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,270) scale(1,-1)">RXD</text>
+					<text x="580" y="90" style="font-family: Arial; font-size: 10px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,180) scale(1,-1)">TXD</text>
+					<path d="M 180,137 L 245,137 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<rect x="245" y="131.0" width="43" height="12.0" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+					<text x="243" y="152" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,304) scale(1,-1)">R3 4.7 kohm</text>
+					<path d="M 288,137 L 338,137 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<circle cx="338" cy="137" r="2.5" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,20%,16%); fill-rule: evenodd;"/>
+					<path d="M 338,137 L 568,137 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 338,137 L 338,119 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<rect x="332" y="84" width="12" height="35" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+					<path d="M 338,84 L 338,68 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 338,68 L 338,60 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 331,60 L 345,60 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 333.5,56 L 342.5,56 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<path d="M 336,52 L 340,52 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<text x="349" y="101" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,202) scale(1,-1)">R4 27 kohm</text>
+					<text x="424" y="149" style="font-family: Arial; font-size: 9px;fill: rgb(3%,46%,32%); stroke:none;" transform="translate(0,298) scale(1,-1)">2.81 V nominal</text>
+					<path d="M 568,90 L 515,90 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<rect x="408" y="64" width="107" height="50" rx="6" ry="6" style="stroke: rgb(3%,46%,32%); stroke-linecap: butt; stroke-width: 1.3; fill: rgb(93%,96%,94%); fill-rule: evenodd;"/>
+					<text x="418" y="93" style="font-family: Arial; font-size: 12px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,186) scale(1,-1)">U1 buffer</text>
+					<text x="418" y="77" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,154) scale(1,-1)">SN74LVC1G17</text>
+					<path d="M 408,90 L 180,90 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+					<text x="397" y="44" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,88) scale(1,-1)">A = pin 2; Y = pin 4 (DBV)</text>
+					<text x="397" y="29" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,58) scale(1,-1)">VCC pin 5 = 3V3; GND pin 3</text>
+					<text x="397" y="14" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,28) scale(1,-1)">100 nF from VCC to GND; pin 1 NC</text>
+					<text x="10" y="21" style="font-family: Arial; font-size: 9px;fill: rgb(52%,34%,10%); stroke:none;" transform="translate(0,42) scale(1,-1)">Power the modem before the controller to avoid UART back-powering.</text>
+				</g>
+			</g>
+			<g transform="">
+				<text x="0" y="408" style="font-family: Arial; font-size: 19px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,816) scale(1,-1)">02  Relay drivers and low-voltage test load</text>
+				<text x="0" y="384" style="font-family: Arial; font-size: 10px;fill: rgb(32%,40%,36%); stroke:none;" transform="translate(0,768) scale(1,-1)">Build this circuit twice. K1 uses D1 / GPIO5; K2 uses D2 / GPIO4.</text>
+				<text x="0" y="369" style="font-family: Arial; font-size: 10px;fill: rgb(32%,40%,36%); stroke:none;" transform="translate(0,738) scale(1,-1)">These are bare 5 V relay coils (70-100 mA). Active-low relay modules need different wiring and firmware.</text>
+				<text x="0" y="224" style="font-family: Arial; font-size: 11px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,448) scale(1,-1)">D1 (or D2)</text>
+				<path d="M 80,228 L 113,228 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<rect x="113" y="222.0" width="44" height="12.0" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+				<text x="111" y="243" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,486) scale(1,-1)">R1 / R2: 100 ohm</text>
+				<path d="M 157,228 L 255,228 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<circle cx="212" cy="228" r="2.5" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,20%,16%); fill-rule: evenodd;"/>
+				<path d="M 212,228 L 212,176 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<rect x="206" y="138" width="12" height="38" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+				<path d="M 212,138 L 212,94 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 212,94 L 212,86 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 205,86 L 219,86 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 207.5,82 L 216.5,82 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 210,78 L 214,78 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<text x="115" y="159" style="font-family: Arial; font-size: 10px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,318) scale(1,-1)">100 kohm</text>
+				<text x="115" y="144" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,288) scale(1,-1)">gate pulldown</text>
+				<path d="M 255,209 L 255,247 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 267,206 L 267,250 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 267,250 L 292,250 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 292,250 L 292,282 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 267,206 L 292,206 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 292,206 L 292,94 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 292,94 L 292,86 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 285,86 L 299,86 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 287.5,82 L 296.5,82 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 290,78 L 294,78 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<text x="242" y="252" style="font-family: Arial; font-size: 10px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,504) scale(1,-1)">G</text>
+				<text x="300" y="263" style="font-family: Arial; font-size: 10px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,526) scale(1,-1)">D</text>
+				<text x="300" y="196" style="font-family: Arial; font-size: 10px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,392) scale(1,-1)">S</text>
+				<text x="312" y="236" style="font-family: Arial; font-size: 12px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,472) scale(1,-1)">Q1 / Q2</text>
+				<text x="312" y="220" style="font-family: Arial; font-size: 11px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,440) scale(1,-1)">AO3400A</text>
+				<text x="312" y="204" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,408) scale(1,-1)">SOT-23: 1 G, 2 S, 3 D</text>
+				<rect x="274" y="282" width="36" height="49" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,94%); fill-rule: evenodd;"/>
+				<text x="316" y="305" style="font-family: Arial; font-size: 11px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,610) scale(1,-1)">K1 / K2 coil</text>
+				<text x="316" y="290" style="font-family: Arial; font-size: 10px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,580) scale(1,-1)">5 V DC</text>
+				<path d="M 292,331 L 292,349 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 292,349 L 452,349 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<text x="292" y="355" style="font-family: Arial; font-size: 10px;fill: rgb(3%,46%,32%); stroke:none;" transform="translate(0,710) scale(1,-1)">+5 V from Buck A</text>
+				<circle cx="292" cy="349" r="2.5" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,20%,16%); fill-rule: evenodd;"/>
+				<path d="M 292,272 L 405,272 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<circle cx="292" cy="272" r="2.5" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,20%,16%); fill-rule: evenodd;"/>
+				<path d="M 405,272 L 405,294 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<polygon points="395 297, 415 297, 405 315" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+				<path d="M 394,318 L 416,318 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 405,318 L 405,349 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<circle cx="405" cy="349" r="2.5" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,20%,16%); fill-rule: evenodd;"/>
+				<text x="430" y="316" style="font-family: Arial; font-size: 10px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,632) scale(1,-1)">D1 / D2: 1N5819</text>
+				<text x="430" y="301" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,602) scale(1,-1)">Stripe / cathode to +5 V</text>
+				<text x="430" y="286" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,572) scale(1,-1)">Anode to MOSFET drain</text>
+				<rect x="458" y="65" width="272" height="155" rx="6" ry="6" style="stroke: rgb(3%,46%,32%); stroke-linecap: butt; stroke-width: 1.3; fill: rgb(93%,96%,94%); fill-rule: evenodd;"/>
+				<text x="468" y="199" style="font-family: Arial; font-size: 12px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,398) scale(1,-1)">Isolated relay contacts</text>
+				<text x="468" y="78" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,156) scale(1,-1)">NC left unused; no mains wiring shown</text>
+				<text x="471" y="183" style="font-family: Arial; font-size: 10px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,366) scale(1,-1)">12 V test supply +</text>
+				<path d="M 471,167 L 498,167 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<text x="482" y="151" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,302) scale(1,-1)">COM</text>
+				<circle cx="498" cy="167" r="3" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+				<path d="M 501,167 L 531,186 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<circle cx="539" cy="167" r="3" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+				<text x="535" y="151" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,302) scale(1,-1)">NO</text>
+				<path d="M 542,167 L 586,167 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<circle cx="608" cy="167" r="20" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+				<path d="M 596,155 L 620,179 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 596,179 L 620,155 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 628,167 L 704,167 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 704,167 L 704,121 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<path d="M 704,121 L 471,121 Z" style="stroke: rgb(9%,20%,16%); stroke-linecap: butt; stroke-width: 1.5;"/>
+				<text x="471" y="102" style="font-family: Arial; font-size: 10px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,204) scale(1,-1)">12 V test supply -</text>
+				<text x="647" y="182" style="font-family: Arial; font-size: 9px;fill: rgb(9%,20%,16%); stroke:none;" transform="translate(0,364) scale(1,-1)">Test lamp</text>
+				<text x="0" y="63" style="font-family: Arial; font-size: 11px;fill: rgb(3%,46%,32%); stroke:none;" transform="translate(0,126) scale(1,-1)">GPIO HIGH turns the coil ON; LOW and reset turn it OFF.</text>
+				<text x="0" y="43" style="font-family: Arial; font-size: 10px;fill: rgb(52%,34%,10%); stroke:none;" transform="translate(0,86) scale(1,-1)">Do not power a coil directly from a NodeMCU GPIO.</text>
+				<text x="0" y="23" style="font-family: Arial; font-size: 10px;fill: rgb(52%,34%,10%); stroke:none;" transform="translate(0,46) scale(1,-1)">For a mains motor, use an electrician-installed contactor and overload protection.</text>
+			</g>
+		</g>
+	</g>
+</svg>
