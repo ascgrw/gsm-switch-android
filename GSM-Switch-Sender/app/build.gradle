@@ -1,0 +1,17 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.shahid.gsmcontrol'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.shahid.gsmcontrol.navy'
+        minSdk 23
+        targetSdk 35
+        versionCode 8
+        versionName '1.7'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes { release { minifyEnabled false } }
+}
